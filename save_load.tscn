@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bhss7sk3l2lv7"]
+
+[node name="SaveLoad" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 0.485
+offset_right = 2.0
+offset_bottom = -0.279999
+grow_horizontal = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.273
+anchor_right = 0.737
+anchor_bottom = 1.162
+offset_left = -0.0419922
+offset_right = 0.501953
+offset_bottom = 0.131989
+grow_horizontal = 2
+
+[node name="Save" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "SAVE"
+
+[node name="Load" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "LOAD
+"

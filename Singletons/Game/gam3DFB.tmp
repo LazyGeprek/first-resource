@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://ykdyonb32nes"]
+
+[ext_resource type="PackedScene" uid="uid://drmc1xxp6xib8" path="res://Singletons/ManagerSilver/manager_silver.tscn" id="1_ggyqn"]
+[ext_resource type="PackedScene" uid="uid://m5lggmwhcq54" path="res://Singletons/GameManager/game_manager.tscn" id="2_4n8p1"]
+[ext_resource type="PackedScene" uid="uid://d2q3bs7up6xrw" path="res://Components/LabelSilver/label_silver.tscn" id="2_bhpsv"]
+[ext_resource type="PackedScene" uid="uid://7d4g2pivexe3" path="res://Components/ButtonSilver/button_silver.tscn" id="3_ccfbv"]
+[ext_resource type="PackedScene" uid="uid://bhss7sk3l2lv7" path="res://save_load.tscn" id="5_m7bjp"]
+
+[node name="Game" type="Node"]
+
+[node name="Handler" type="Node" parent="."]
+
+[node name="ManagerSilver" parent="Handler" instance=ExtResource("1_ggyqn")]
+
+[node name="GameManager" parent="Handler" instance=ExtResource("2_4n8p1")]
+
+[node name="Button_Silver" parent="." instance=ExtResource("3_ccfbv")]
+
+[node name="SilverLabel" parent="." instance=ExtResource("2_bhpsv")]
+
+[node name="SaveLoad" parent="." instance=ExtResource("5_m7bjp")]
